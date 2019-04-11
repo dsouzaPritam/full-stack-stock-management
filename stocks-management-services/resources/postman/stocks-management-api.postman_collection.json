@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "402a7fa2-e4b1-4a2c-ada3-7901848e0219",
+		"_postman_id": "28a4d752-c040-475a-863d-0ac3d9ce9d53",
 		"name": "stocks-management-api",
 		"description": "Api to manage stocks: \n- get a list of stocks\n- get one stock from the list\n- update the price of a single stock\n- create a stock",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -9,6 +9,21 @@
 		{
 			"name": "getStocks",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminBroker",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -38,8 +53,69 @@
 			"response": []
 		},
 		{
+			"name": "deleteStock",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminBroker",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stocks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stocks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "createStock",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminBroker",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -71,6 +147,21 @@
 		{
 			"name": "updateStock",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminBroker",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [
 					{
@@ -103,6 +194,21 @@
 		{
 			"name": "getStock",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminBroker",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{

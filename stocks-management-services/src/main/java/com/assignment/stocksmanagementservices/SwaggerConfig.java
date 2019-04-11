@@ -25,6 +25,7 @@ public class SwaggerConfig {
             "- get particular of stocks [GET -> api/stocks/{stockId}].\n" +
             "- create stock [POST -> api/stocks/].\n" +
             "- update stock [PUT -> api/stocks/{stockId}].\n" +
+            "- delete stock [DELETE -> api/stocks/{stockId}].\n" +
             "\n";
 
 

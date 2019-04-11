@@ -8,6 +8,7 @@ One can do the following :
 * get particular of stocks.
 * create stock.
 * update stock.
+* delete stock.
 
 ### Stock API  
 Currently application exposes 3 REST API's:
@@ -15,6 +16,7 @@ Currently application exposes 3 REST API's:
 *   getStockById : (url => /api/stocks/{id} , HTTP Methood = GET)
 *   createStock : (url => /api/stocks , HTTP Methood = POST)
 *   updateStock : (url => /api/stocks/{id} , HTTP Methood = PUT)
+*   deleteStock : (url => /api/stocks/{id} , HTTP Methood = DELETE)
 
 The API details can be found on swagger-ui, which can be launched using the following url:  
 - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) --> launch after starting spring-boot application.
@@ -49,12 +51,11 @@ Postman collection can be [found](resources/postman/stocks-management-api.postma
 This can be used to make direct API calls (emulating client).
 
 ### Future improvements 
-- Server: Add more API's  
-    - delete the stock
+- Server: Add more API's      
     - maintain life cycle of stocks 
     - filter list of stocks based on status (new / established/ blocked etc.)    
 - Create client and server containers
-- Add authorization to access the api's    
+- Add JWT authorization to access the api's    
 
 ## Author
 * **Pritam Dsouza** - *Created the REST API to manage stocks in memory database* - dsouza.pritam@gmail.com

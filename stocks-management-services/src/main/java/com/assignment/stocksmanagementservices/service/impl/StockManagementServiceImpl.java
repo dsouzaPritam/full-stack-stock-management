@@ -1,6 +1,7 @@
 package com.assignment.stocksmanagementservices.service.impl;
 
 import com.assignment.stocksmanagementservices.domain.Stock;
+import com.assignment.stocksmanagementservices.exception.model.StockNotFoundException;
 import com.assignment.stocksmanagementservices.repository.StockRepository;
 import com.assignment.stocksmanagementservices.service.StockManagementService;
 import org.springframework.beans.BeanUtils;
@@ -70,6 +71,20 @@ public class StockManagementServiceImpl implements StockManagementService{
             entityStock.setLastUpdate(new Date());
         }
         return mapEntityToDomainStock(stockRepository.save(entityStock));
+    }
+
+    /**
+     * Delete stock in memory database
+     * @param id
+     */
+    @Override
+    public void deleteStock(Integer id){
+        Optional<com.assignment.stocksmanagementservices.entity.Stock> stockEntity = stockRepository.findById(id);
+        if(!stockEntity.isPresent()){
+            throw new StockNotFoundException("Stock could not be deleted , as not found for id : " + id );
+        }
+        // else delete
+        stockRepository.deleteById(id);
     }
 
     /**

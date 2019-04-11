@@ -23,6 +23,7 @@ import java.util.List;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
+@CrossOrigin(origins="http://localhost:4200")
 @Slf4j
 @RestController
 @RequestMapping("/api")
@@ -106,6 +107,15 @@ public class StockManagementController {
         resource.add(linkTo.withRel("all-stocks"));
 
         return resource;
+    }
+
+    @ApiOperation(value="Delete particular Stock", tags = { "StockManagement" })
+    @DeleteMapping(value = "/stocks/{id}")
+    public ResponseEntity<Void> deleteStockById(@PathVariable int id) {
+        //delete stock in database
+        stockManagementService.deleteStock(id);
+        // delete has no response body
+        return ResponseEntity.noContent().build();
     }
 
 }

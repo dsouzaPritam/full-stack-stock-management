@@ -17,5 +17,5 @@ public interface StockManagementService {
 
     public Stock updateStock(Integer id, Integer updatedPrice);
 
-
+    public void deleteStock(Integer id);
 }
