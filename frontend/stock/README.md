@@ -18,22 +18,22 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Screens
 * logon screen  
-![logon screen](resources/Logon_Page.JPG "logon screen")  
+![logon screen](resource/Logon_Page.JPG "logon screen")  
 
 * welcome screen  
-![logon screen](resources/Welcome_Page.JPG "welcome screen")  
+![welcome screen](resource/Welcome_Page.JPG "welcome screen")  
 
 * list of stocks screen  
-![list of stock screen](resources/List_Stock.JPG "list of stock screen")  
+![list of stock screen](resource/List_Stock.JPG "list of stock screen")  
 
 * add stock screen  
-![add stock screen](resources/Add_Stock.JPG "add stock screen")  
+![add stock screen](resource/Add_Stock.JPG "add stock screen")  
 
 * update stock screen  
-![update stock screen](resources/Update_Stock.JPG "update stock screen")  
+![update stock screen](resource/Update_Stock.JPG "update stock screen")  
 
 * logout screen  
-![logon screen](resources/Logout_Page.JPG "logon screen")  
+![logon screen](resource/Logout_Page.JPG "logon screen")  
 
 ## Code scaffolding
 
