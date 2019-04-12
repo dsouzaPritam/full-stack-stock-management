@@ -18,6 +18,8 @@ Currently application exposes 3 REST API's:
 *   updateStock : (url => /api/stocks/{id} , HTTP Methood = PUT)
 *   deleteStock : (url => /api/stocks/{id} , HTTP Methood = DELETE)
 
+**Note:** Basic authentication has been implemented with username =>adminBroker and password =>password  
+
 The API details can be found on swagger-ui, which can be launched using the following url:  
 - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) --> launch after starting spring-boot application.
 

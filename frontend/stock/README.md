@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project details
 A frontend has been developed to access the REST API's odf stack-management. The application is devloped using Angular framework and include the following screens:  
-* logon screen
+* logon screen (username =>adminBroker , password =>password)
 * welcome screen
 * list of stocks screen
 * add stock screen
